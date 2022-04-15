@@ -5,7 +5,7 @@ from datetime import datetime
 
 local_build = len(sys.argv) > 1 and sys.argv[1] == 'local'
 
-md_link = re.compile('\[(.+)\]\(([^ ]+)(?: "(.+)")?\)')
+md_link = re.compile('\[([^\]]+)\]\(([^ )]+)')
 page_directory = 'pages'
 tiddler_directory = 'tiddlers'
 
