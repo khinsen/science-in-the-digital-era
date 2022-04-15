@@ -17,24 +17,41 @@ def rewrite_link(match):
 for tiddler_file in os.listdir(tiddler_directory):
     os.unlink(os.path.join(tiddler_directory, tiddler_file))
 
-for page_file in os.listdir(page_directory):
-    page_path = os.path.join(page_directory, page_file)
-    page_title = os.path.splitext(page_file)[0]
+for page_filename in os.listdir(page_directory):
+    if not page_filename.endswith('.md'):
+        continue
+    page_title = os.path.splitext(page_filename)[0]
     print(page_title)
-    page_text = open(page_path).read()
+
+    page_path = os.path.join(page_directory, page_filename)
+    meta_path = os.path.join(page_directory, page_title + '.meta')
+    tiddler_path = os.path.join(tiddler_directory, page_filename)
+    meta_tiddler_path = os.path.join(tiddler_directory, page_title + '.meta')
+
     stream = os.popen('git log --format=%at -- "' + page_path + '"')
     timestamps = stream.readlines()
     stream.close()
     if len(timestamps) == 0 and local_build:
         timestamps.append(os.path.getmtime(page_path))
+
     tw_timestamps = [datetime.fromtimestamp(int(timestamp)).strftime('%Y%m%d%H%M%S%f')[:-3] for timestamp in timestamps]
     tw_creation_timestamp = tw_timestamps[-1]
     tw_modification_timestamp = tw_timestamps[0]
-    with open(os.path.join(tiddler_directory, page_file), 'w') as tiddler_file:
-        tiddler_file.write(md_link.sub(rewrite_link, page_text))
-    with open(os.path.join(tiddler_directory, page_title + '.meta'), 'w') as meta_file:
-        meta_file.write(f'title: {page_title}\n')
-        meta_file.write('type: text/x-markdown\n')
-        meta_file.write(f'created: {tw_creation_timestamp}\n')
-        meta_file.write(f'modified: {tw_modification_timestamp}\n')
+
+    with open(tiddler_path, 'w') as tiddler_file:
+        tiddler_file.write(md_link.sub(rewrite_link, open(page_path).read()))
+
+    if os.path.exists(meta_path):
+        meta = []
+        for line in open(meta_path):
+            if line.split()[0] not in ['created:', 'modified:']:
+                meta.append(line)
+    else:
+        meta = [f'title: {page_title}\n',
+                'type: text/x-markdown\n']
+    meta.append(f'created: {tw_creation_timestamp}\n')
+    meta.append(f'modified: {tw_modification_timestamp}\n')
+    with open(meta_tiddler_path, 'w') as meta_file:
+        for line in meta:
+            meta_file.write(line)
 
