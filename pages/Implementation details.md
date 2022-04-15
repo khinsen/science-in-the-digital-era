@@ -1,0 +1,3 @@
+This digital garden is a [TiddlyWiki](https://tiddlywiki.com/) extended with the [Markdown](https://github.com/Jermolene/TiddlyWiki5/tree/master/plugins/tiddlywiki/markdown) and [Krystal](https://github.com/crazko/krystal) plugins.
+
+The pages are written as Markdown files (plus optional metadata), which I write and edit using [GNU Emacs](https://www.gnu.org/software/emacs/). They are stored in a [repository on GitHub](https://github.com/khinsen/science-in-the-digital-era), which also contains a Python script and a bash script that generate the TiddlyWiki by adding the pages to a template file (which is also in the repository).
