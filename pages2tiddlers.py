@@ -10,11 +10,14 @@ page_directory = 'pages'
 tiddler_directory = 'tiddlers'
 
 def rewrite_link(match):
-    text, link, _ = match.groups()
-    if link.endswith('.md'):
+    text, link = match.groups()
+    internal = link.endswith('.md') and not link.startswith('http')
+    if internal:
         tw_link = '#' + link[:-3]
+        print(f"  Page link: {tw_link}")
         return f'[{text}]({tw_link})'
     else:
+        print(f"  External link: {link}")
         return f'[{text}]({link})'
 
 for tiddler_file in os.listdir(tiddler_directory):
