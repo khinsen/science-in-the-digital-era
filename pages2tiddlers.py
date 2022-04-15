@@ -11,8 +11,11 @@ tiddler_directory = 'tiddlers'
 
 def rewrite_link(match):
     text, link, _ = match.groups()
-    tw_link = '#' + link[:-3]
-    return f'[{text}]({tw_link})'
+    if link.endswith('.md'):
+        tw_link = '#' + link[:-3]
+        return f'[{text}]({tw_link})'
+    else:
+        return f'[{text}]({link})'
 
 for tiddler_file in os.listdir(tiddler_directory):
     os.unlink(os.path.join(tiddler_directory, tiddler_file))
@@ -24,9 +27,9 @@ for page_filename in os.listdir(page_directory):
     print(page_title)
 
     page_path = os.path.join(page_directory, page_filename)
-    meta_path = os.path.join(page_directory, page_title + '.meta')
+    meta_path = os.path.join(page_directory, page_filename + '.meta')
     tiddler_path = os.path.join(tiddler_directory, page_filename)
-    meta_tiddler_path = os.path.join(tiddler_directory, page_title + '.meta')
+    meta_tiddler_path = os.path.join(tiddler_directory, page_filename + '.meta')
 
     stream = os.popen('git log --format=%at -- "' + page_path + '"')
     timestamps = stream.readlines()
