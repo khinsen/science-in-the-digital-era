@@ -15,10 +15,10 @@ def rewrite_link(match):
     if internal:
         tw_link = '#' + link[:-3]
         print(f"  Page link: {tw_link}")
-        return f'[{text}]({tw_link})'
+        return f'[{text}]({tw_link}'
     else:
         print(f"  External link: {link}")
-        return f'[{text}]({link})'
+        return f'[{text}]({link}'
 
 for tiddler_file in os.listdir(tiddler_directory):
     os.unlink(os.path.join(tiddler_directory, tiddler_file))
