@@ -7,4 +7,5 @@ There are many formal languages designed for representing scientific information
 There are also human-readable formal languages designed primarily for non-scientific applications but also used to represent scientific information. Programming languages used in [scientific computing](Scientific%20computing.md) are the most prominent examples. In [computational notebooks](Computational%20notebooks.md), high-level programming languages such as Python or R are routinely used as a scientific notation. However, they fill this role rather poorly, in particular because they cannot express anything other than executable algorithms.
 
 Recommended reading:
- - [Scientific notations for the digital era](Scientific%20notations%20for%20the%20digital%20era.md)
+ - [Scientific notations for the digital era](Scientific%20notations%20for%20the%20digital%20era.md) (on arXiv) and a [comment](http://www.nature.com/doifinder/10.1038/nphys3815) on it by Mark Buchanan in *Nature Physics*
+ - [Scientific communication in the digital age](http://dx.doi.org/10.1063/PT.3.3181) (in *Physics Today*)
