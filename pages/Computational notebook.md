@@ -1,1 +1,3 @@
+An electronic document embedding a computation into a narrative.
 
+Computational notebooks differ from [literate programming](Literate%20programming.md) in documenting a *computation*, i.e. code with all required input data, whereas literate programming documents *programs*, i.e. code designed to accept varying input data. It is the focus on fully specified computations that makes it possible to include intermediate and final results. On the other hand, this same focus means that notebooks can only deal with the surface layer of a computation. The library code called from that surface layer remains inaccessible to the reader of a notebook.
