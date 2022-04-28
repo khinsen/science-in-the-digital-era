@@ -4,8 +4,10 @@ A *digital* scientific notation is a scientific notation that can be processed b
 
 There are many formal languages designed for representing scientific information. An example is the [Systems Biology Markup Language (SBML)](https://en.wikipedia.org/wiki/SBML). Most of them do not qualify as digital scientific notations, because they are designed to be used by software but not for communication between humans.
 
-There are also human-readable formal languages designed primarily for non-scientific applications but also used to represent scientific information. Programming languages used in [scientific computing](Scientific%20computing.md) are the most prominent examples. In [computational notebooks](Computational%20notebook.md), high-level programming languages such as Python or R are routinely used as a scientific notation. However, they fill this role rather poorly, in particular because they cannot express anything other than executable algorithms.
+There are also formal languages that are designed to be read and written by humans, in addition to computers. Programming languages are the most prominent examples. In [scientific computing](Scientific%20computing.md), programming languages are routinely used to represent scientific knowledge as program code. In particular, [computational notebooks](Computational%20notebook.md) embed code written in high-level programming languages such as Python or R into a narrative, much like mathematical notation is used in traditional scientific publications. However, programming languages fill the role of scientific notations rather poorly, in particular because they cannot express anything other than executable algorithms.
 
-Recommended reading:
+Digital scientific notations are *not* computational tools, but parts of the communication interfaces between scientists and their computational tools. In particular, they permit scientists engaged in [computer-aided research](Computer-aided%20research.md) to discuss computational models and methods in a way that ensures conformity between the human narratives and the computations.
+
+Further reading:
  - [Scientific notations for the digital era](Scientific%20notations%20for%20the%20digital%20era.md) (on arXiv) and a [comment](http://www.nature.com/doifinder/10.1038/nphys3815) on it by Mark Buchanan in *Nature Physics*
  - [Scientific communication in the digital age](http://dx.doi.org/10.1063/PT.3.3181) (in *Physics Today*)
