@@ -1,0 +1,19 @@
+Media are substrates for encoding information. They can serve many purposes, the most common ones being communication, archival, or interfacing with tools. Printed paper is a medium. An abacus is a medium. The telephone is a medium. Television is a medium.
+
+Digital media are media defined by software, amenable to processing with a computer. MP3 audio files are digital media, as are Word documents, PNG images, and many others.
+
+Computational media are digital media that can encode computation among other information. Spreadsheets (e.g. Excel and its many clones) are probably the most well-known example. Game engines are another example, well known as well though most people are probably unaware of their capacity to encode computation.
+
+[Programming languages](Programming%20language.md) can be seen as a degenerate form of computational media, which can encode computation but nothing else. I consider the predominance of programming languages in today's computing technology, and in particular the widespread idea of "general purpose" programming languages, a sign of the immaturity of this technology. It goes along with an exaggerated focus on [code over data](Code%20over%20data.md).
+
+Computational science suffers from this exaggerated focus as well. The core entities of science are [observations](Observation.md), [models](Model.md), and the relations between them. Computational media for science should encode these entities, and let scientists explore and refine them. Tools, such as computers and software, are merely means to this end. Astronomy is about stars and galaxies, not about telescopes. Particle physics is about elementary particles, not about particle colliders. Biology is about living organisms, not about microscopes or test tubes. The computational branches of these disciplines should also be about entities in nature and the models we make of them, not about computers and software.
+
+What could a computational medium for science look like? I'll stick to what I know: physics and chemistry, and in particular biophysics. My current idea of a computational medium for these disciplines takes the shape of a [Wiki](Wiki.md), something like [Wikipedia](https://en.wikipedia.org/wiki/Wikipedia). Some pages in this Wiki describe entities, such as proteins. Other pages describe *models* for entities in nature, such as the [elastic network model](Elastic%20network%20model.md) for proteins. Yet other pages describe *observations* on these entities, i.e. typically the outcomes of experimental studies. Below this surface of human-readable narratives, the pages contain machine-readable representations of everything, made explorable and refineable by suitable tools.
+
+Much of the technology required for such a computational medium already exists. We have Wikis, and we have the [semantic Web](Semantic%20Web.md) as a backbone for encoding relations in a machine-readable way. The [Nanopublications](https://nanopub.org/) project (and others!) illustrates how the semantic Web can be used to encode relations between observations and models. We also have good digital representations for observations, though the multitude of data formats makes them hard to manager. What's lacking is a suitable representation of models - that's what I hope to achieve with [digital scientific notations](Digital%20scientific%20notation.md).
+
+Recommended reading:
+
+ - [Beyond programming languages](https://doi.org/10.1145/359131.359133), by Terry Winograd. A 1979 paper whose vision has not yet been realized.
+ - [The computer revolution hasn't happened yet](https://archive.org/details/AlanKayAtOOPSLA1997TheComputerRevolutionHasntHappenedYet), by Alan Kay. A recorded talk from 1997, but it hasn't happened in the following 25 years either.
+ - [Computational science: shifting the focus from tools to models](https://doi.org/10.12688/f1000research.3978.2), by yours truly.
