@@ -45,7 +45,11 @@ for page_filename in os.listdir(page_directory):
     tw_modification_timestamp = tw_timestamps[0]
 
     with open(tiddler_path, 'w') as tiddler_file:
-        tiddler_file.write(md_link.sub(rewrite_link, open(page_path).read()))
+        page_text = open(page_path).read()
+        if page_text.strip() == "":
+            tiddler_file.write("This page is [empty](#Empty%20page)\n")
+        else:
+            tiddler_file.write(md_link.sub(rewrite_link, page_text))
 
     if os.path.exists(meta_path):
         meta = []
