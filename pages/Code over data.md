@@ -1,1 +1,9 @@
+A computation is, from a bird's eye view, the application of code to input data, producing output data. Usually the code is a tool to manipulate or transform data. Computer users tend to care more about their data than their tools. They want to write a letter, not use Microsoft Word. They want to watch movie, not start VLC. They want to simulate the behavior of a protein, not run GROMACS. Computing *should* be data-centric, for most use cases.
 
+Reality is quite the opposite. It's code over data everywhere you look. Your phone shows "apps", meaning tools. They work on data that is handled opaquely. You don't really know where it is, what it represents, who can access it. All you get is the view on the data that the app shows you.
+
+On the desktop, it's very similar. You probably know the name of your word processor, but not the same of the file format it uses to store the data. You probably cannot name other software that could use that same file format. Contrary to phones, desktop systems let you see and manipulate the files that contain your data, but offer your only very generic operations (copy, delete), or running "the app" that effectively owns the data.
+
+In the university classroom, we see the same predominance of code over data. Whether you look at the titles of classes or textbooks, you see a lot more on software or algorithms than on data models.
+
+Computing is obsessed with tools, which seem more important than the tasks they are designed to perform and the information that they process. [Computer-aided research](Computer-aided%20research.md) is inheriting this obsession. More and more papers cite software (which is good!) but don't describe in sufficient detail what the software does (which is bad), nor how the input and output data are structured, making it difficult for readers to examine the work in detail, possibly using different software.
