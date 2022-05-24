@@ -26,6 +26,7 @@ for tiddler_file in os.listdir(tiddler_directory):
 for page_filename in os.listdir(page_directory):
     if not page_filename.endswith('.md'):
         continue
+    page_filename_url = page_filename.replace(' ', '%20')
     page_title = os.path.splitext(page_filename)[0]
     print(page_title)
 
@@ -34,9 +35,8 @@ for page_filename in os.listdir(page_directory):
     tiddler_path = os.path.join(tiddler_directory, page_filename)
     meta_tiddler_path = os.path.join(tiddler_directory, page_filename + '.meta')
 
-    stream = os.popen('git log --format=%at -- "' + page_path + '"')
-    timestamps = stream.readlines()
-    stream.close()
+    with os.popen('git log --format=%at -- "' + page_path + '"') as stream:
+        timestamps = stream.readlines()
     if len(timestamps) == 0 and local_build:
         timestamps.append(os.path.getmtime(page_path))
 
@@ -44,13 +44,23 @@ for page_filename in os.listdir(page_directory):
     tw_creation_timestamp = tw_timestamps[-1]
     tw_modification_timestamp = tw_timestamps[0]
 
+    with os.popen('git log --format=%H') as stream:
+        commits = stream.readlines()
+    commit = commits[0].strip()
+
+    # Tiddler text
     with open(tiddler_path, 'w') as tiddler_file:
         page_text = open(page_path).read()
         if page_text.strip() == "":
             tiddler_file.write("This page is [empty](#Empty%20page)\n")
         else:
             tiddler_file.write(md_link.sub(rewrite_link, page_text))
+        tiddler_file.write("\n<br>\n")
+        tiddler_file.write("[Permanent link to this version]")
+        tiddler_file.write(f"(https://github.com/khinsen/science-in-the-digital-era/blob/{commit}/pages/{page_filename_url})")
+        tiddler_file.write("\n")
 
+    # Metadata file
     if os.path.exists(meta_path):
         meta = []
         for line in open(meta_path):

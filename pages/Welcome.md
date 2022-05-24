@@ -9,6 +9,10 @@ You can download this digital garden for offline reading. Just use the "save to 
 - If an internal link leads to an [empty page](Empty%20page.md), come back later to see what I have to say on that topic.
 - If you come here from time to time to check for new material, see the list of [recently changed pages](#$:/core/ui/SideBar/Recent).
 
+### Citing pages from this site
+
+At the end of each page, there is a permanent link to the exact version of the text you have been reading. This is the preferred reference for citations in other work. For sharing on social media, use the link shown by your browser, which always refers to the latest version.
+
 ### License
 
 The pages of this digital garden are covered by a Creative Commons License ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) to be precise).
