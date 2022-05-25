@@ -48,6 +48,10 @@ for page_filename in os.listdir(page_directory):
         commits = stream.readlines()
     commit = commits[0].strip()
 
+    with os.popen(f'git hash-object "{page_path}"') as stream:
+        git_hash = stream.readlines()[0].strip()
+    print("Page hash: ", git_hash)
+
     # Tiddler text
     with open(tiddler_path, 'w') as tiddler_file:
         page_text = open(page_path).read()
@@ -58,6 +62,8 @@ for page_filename in os.listdir(page_directory):
         tiddler_file.write("\n<br>\n")
         tiddler_file.write("[Permanent link to this version]")
         tiddler_file.write(f"(https://github.com/khinsen/science-in-the-digital-era/blob/{commit}/pages/{page_filename_url})")
+        tiddler_file.write(" ([archive copy]")
+        tiddler_file.write(f"(https://archive.softwareheritage.org/swh:1:cnt:{git_hash}))")
         tiddler_file.write("\n")
 
     # Metadata file
