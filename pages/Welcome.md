@@ -13,7 +13,7 @@ You can download this digital garden for offline reading. Just use the "save to 
 
 At the end of each page, there is a permanent link to the exact version of the text you have been reading. This is the preferred reference for citations in other work. For sharing on social media, use the link shown by your browser, which always refers to the latest version.
 
-There is also an archival version of the permanent link, which refers to the [Software Heritage](https://www.softwareheritage.org/) archive. If GitHub ever closes down, or if my repository is deleted for whatever reason, the archival copy should still be there. Note however that it may not yet be there when you see it, because Software Heritage only scans GitHub from time to time.
+There is also an archival version of the permanent link, which refers to the [Software Heritage](https://www.softwareheritage.org/) archive and may not work yet when you see it. If you are interested in the technicalities, see [the detailed explanation](Links%20to%20the%20future.md)!
 
 ### License
 
