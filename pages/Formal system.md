@@ -1,0 +1,9 @@
+[Wikipedia](https://en.wikipedia.org/wiki/Formal_system) defines a formal system as:
+
+> A formal system is an abstract structure used for inferring theorems
+> from axioms according to a set of rules.
+
+This is a rather narrow definition in the context of mathematics. I use the term in a wider sense as any abstract structure used for deducing outputs from given inputs using precise rules. For example, I consider [Newton's laws of motion](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion) a formal system for computing the trajectories of point masses from their initial positions and a description of their interactions. In this wider sense, formal systems are the symbolic equivalent of machines, and computers have turned this metaphor into a physical reality. Indeed, every computer program implements the rules of some formal system, as does an artificial neural network.
+
+Formal systems are usually constructed with a specific intended meaning for its rules, inputs, and outputs. However, the meaning comes from the embedding context, e.g. the scientific model in which the formal system is used. A formal system by itself is just symbols and rules for manipulating them. It is up to the user of the formal system to verify that the rules conform to their intended meanings. Stated in the jargon of computer programming: it is up to the user to verify that a program does what it is expected to do. This sets a limit to the usefulness of large formal systems in scientific models: a formal system (and in particular a computer program or a neural network) that is so complex that examining and verifying it  becomes infeasible has a rather limited utility in science. While it can be used to make testable predictions, it remains at the level of an [empirical model](Empirical%20model.md) with no path to deriving a more powerful [explanatory model](Explanatory%20model.md).
+
