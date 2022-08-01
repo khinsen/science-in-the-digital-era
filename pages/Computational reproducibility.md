@@ -21,12 +21,12 @@ The two Python scripts that are the focus of this case study have been fixed in 
 
 ## Is there a way out?
 
-Yes. Computational reproducibility is, in principle, a solved problem. There are well-understood techniques to document a software assembly completely and precisely, in such a way that it can be transferred to a different computer. Not just any computer though, it has to be sufficiently similar to the original one, and in particular use the same type of processor (which, in a way, is also part of your software stack). Better yet, there are freely available tools that manage software reproducibly for you: [Nix](Nix.md) and [Guix](Guix.md).
+Yes. Computational reproducibility is, in principle, a solved problem. There are well-understood techniques to document a software assembly completely and precisely, in such a way that it can be transferred to a different computer. Not just any computer though, it has to be sufficiently similar to the original one, and in particular use the same type of processor (which, in a way, is also part of your software stack). Better yet, there are freely available tools that manage software (and computations) reproducibly for you: [Nix](Nix.md) and [Guix](Guix.md). A key insight behind these two tools is that every computation on a modern computing system is actually a [staged computation](Staged%20computation.md), with reproducibility of the last stage (the one we most care about) requires the reproducibility of all prior stages.
 
 This isn't the end of the story though. The existence of support tools that guarantee computational reproducibility is only the first step. In terms of user-friendliness, these tools still leave a lot to be desired. And most research software has not yet been integrated into their management scheme, and for some software this is nearly impossible. In particular, only [Open Source](Open%20Source.md) software can be managed reproducibly, because controlled compilation of the source code is a crucial step. And that also means that the only operating system that can be supported is [Linux](Linux.md).
 
 A few years ago, a frequently discussed question was "is computational reproducibility possible?". Today it is clear that the answer is "yes". Now the question is how much reproducibility is worth to researchers. Enough to support the development of Nix and Guix? Enough to invest into learning how to use them? Enough to abandon proprietary software, including the popular operating systems Windows and macOS? Time will tell. Computational reproducibility is no longer a technical issue, it's a social one.
 
 Further reading:
- - [Is reproducibility practical?](https://hpc.guix.info/blog/2022/07/is-reproducibility-practical/) (by [Ludovic Courtès](https://people.bordeaux.inria.fr/lcourtes/))
+ - [Is reproducibility practical?](https://hpc.guix.info/blog/2022/07/is-reproducibility-practical/) by [Ludovic Courtès](https://people.bordeaux.inria.fr/lcourtes/)
 
