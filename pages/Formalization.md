@@ -1,4 +1,4 @@
-Formalization is a process in which concepts and their relations are made more precise by the introduction of [formal systems](Formal%20system.md).
+Formalization is a process in which concepts and their relations are made more precise by the introduction of [formal systems](Formal%20system.md). It can be seen a specific technique of [conceptual engineering](https://en.wikipedia.org/wiki/Conceptual_engineering).
 
 Formalization is widely applied in the construction of [scientific models](Scientific%20model.md), but its importance varies widely between scientific disciplines. The most heavily formalized discipline is physics, to the point that one could almost *define* physics as the study of nature using formalized models. Other disciplines are less attached to formalization, but more formalized models are generally considered superior to less formalized models, and in particular the special case of [quantification](Quantification.md) is almost universally seen as desirable in science today.
 
