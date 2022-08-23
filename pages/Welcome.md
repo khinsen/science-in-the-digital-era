@@ -1,4 +1,4 @@
-This [digital garden](Digital%20Garden.md) contains essays, thoughts, random ideas, and references that relate to the practice of scientific research in the digital era, characterized by computers (personal, high-performance, cloud, ...), software, the Internet, global collaborations, social networks, and more. They represent exclusively [my personal views](About%20the%20author.md) and in particular not those of [my employer](https://www.cnrs.fr/).
+This [digital garden](Digital%20Garden.md) contains essays, thoughts, random ideas, and references that relate to the practice of [scientific research in the digital era](Science%20in%20the%20digital%20era.md), characterized by computers (personal, high-performance, cloud, ...), software, the Internet, global collaborations, social networks, and more. They represent exclusively [my personal views](About%20the%20author.md) and in particular not those of [my employer](https://www.cnrs.fr/).
 
 You can download this digital garden for offline reading. Just use the "save to file" function of your browser.
 
