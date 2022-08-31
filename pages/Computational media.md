@@ -16,4 +16,5 @@ Recommended reading:
 
  - [Beyond programming languages](https://doi.org/10.1145/359131.359133), by Terry Winograd. A 1979 paper whose vision has not yet been realized.
  - [The computer revolution hasn't happened yet](https://archive.org/details/AlanKayAtOOPSLA1997TheComputerRevolutionHasntHappenedYet), by Alan Kay. A recorded talk from 1997, but it hasn't happened in the following 25 years either.
+ - [Software as Computational Media](https://www.youtube.com/watch?v=I-aGF-47hqI), by Clemens Nylandsted Klokmose (video, recorded keynote speech at the conference LIVE'21)
  - [Computational science: shifting the focus from tools to models](https://doi.org/10.12688/f1000research.3978.2), by yours truly.
