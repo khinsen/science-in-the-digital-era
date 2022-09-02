@@ -1,1 +1,5 @@
+What characterizes [formal systems](Formal%20system.md) (as well as formal [languages](Formal%20language.md), methods, etc.) is the existence of a closed symbolic universe in which precise rules apply. Formal systems require no reference to a context for interpreting their rules or making judgments of any kind. The symbols that are processed by a formal systems are of course interpreted in some application context, but this happens outside of the formal universe.
 
+Informal methods, in contrast, use less precise references and rules, whose exact interpretation is context-dependent. The words of a (human) language are a good example. They usually take different meanings in different contexts, but those meanings are nevertheless somehow related.
+
+[Scientific models](Scientific%20model.md) are inherently context-dependent and therefore informal. Formal systems are tools for reasoning that are always embedded into a larger informal model that links the formal system's symbols to concepts about the physical world.
