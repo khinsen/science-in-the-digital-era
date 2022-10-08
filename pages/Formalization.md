@@ -19,6 +19,6 @@ Can we have both the level of verification and transparency of the good old days
      level of individual scientists focusing on a single aspect, and at
      the level of research communities working towards consensual models.
      My ideas for this part remain vague, but I suspect that
-     [computational media](Computationsl%20media.md) for science will be an
+     [computational media](Computational%20media.md) for science will be an
      important ingredient. And maybe also
      [static type systems](Static%20type%20systems.md).
