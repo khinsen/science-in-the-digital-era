@@ -13,7 +13,7 @@ Can we have both the level of verification and transparency of the good old days
   1. Notations for formal systems that are much more lightweight than
      software source code, and integrate well with the narratives that
      define the informal aspects of scientific models. I call them
-     [Digital scientific notations](Digital%20scientific%20notations.md).
+     [Digital scientific notations](Digital%20scientific%20notation.md).
 
   2. Support tools for managing the formalization process, both at the
      level of individual scientists focusing on a single aspect, and at
