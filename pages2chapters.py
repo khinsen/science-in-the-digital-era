@@ -32,6 +32,16 @@ pages.remove("Welcome.md")
 if os.path.exists(output_path):
     os.unlink(output_path)
 
+pdf_title = f"""
+---
+title: 'Science in the digital era'
+author: Konrad Hinsen,
+        Centre de Biophysique Moléculaire (CNRS, France)
+date: {date}
+---
+
+"""
+
 pdf_welcome = "# Welcome {#Welcome}" + f"""
 
 This is an archival copy of my [digital garden](#Digital-Garden) whose
@@ -52,6 +62,7 @@ The pages of this digital garden are covered by a Creative Commons License ([CC 
 """
 
 with open(output_path, 'a') as output_file:
+    output_file.write(pdf_title)
     output_file.write(pdf_welcome)
 
 for page_filename in pages:
