@@ -5,4 +5,5 @@ pandoc all.md \
        --top-level-division=chapter \
        -V colorlinks=true \
        -V linkcolor=blue \
-       -V urlcolor=magenta
+       -V urlcolor=magenta \
+       --template=template.tex
