@@ -1,1 +1,1 @@
-See the [Glamorous Toolkit Web site](https://gtoolkit.com/).
+A toolkit for [making software systems explainable](Making%20Systems%20Explainable.md). Watch that talk, and then see the [Glamorous Toolkit Web site](https://gtoolkit.com/) for further information, and for downloading a copy for your own exploration.
