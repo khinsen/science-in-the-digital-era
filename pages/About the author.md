@@ -1,4 +1,4 @@
-My name is [Konrad Hinsen](https://khinsen.net/), and I have been a research scientist at [CNRS](https://www.cnrs.fr/) in France since 1998.
+My name is [Konrad Hinsen](https://khinsen.net/), and I have been a research scientist at [CNRS](https://www.cnrs.fr/) in France since 1998. You can find me on <a rel="me" href="https://scholar.social/@khinsen">Mastodon</a>
 
 My scientific career started in statistical physics, with a [thesis on colloidal suspensions](https://de.book-info.com/isbn/3-86073-050-9.htm) at [RWTH Aachen](https://www.rwth-aachen.de/) in Germany. My thesis was based mostly on computer simulations that ran on the [Cray Y-MP](https://en.wikipedia.org/wiki/Cray_Y-MP) at the [Forschungszentrum Jülich](http://www.fz-juelich.de/). The simulation programs were small Fortran codes that I wrote and tested myself.
 
