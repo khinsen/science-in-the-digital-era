@@ -11,3 +11,4 @@ Digital scientific notations are *not* computational tools, but parts of the com
 Further reading:
  - [Scientific notations for the digital era](Scientific%20notations%20for%20the%20digital%20era.md) (on arXiv) and a [comment](http://www.nature.com/doifinder/10.1038/nphys3815) on it by Mark Buchanan in *Nature Physics*
  - [Scientific communication in the digital age](http://dx.doi.org/10.1063/PT.3.3181) (in *Physics Today*)
+ - [Leibniz in four minutes](https://diode.zone/w/1RUVjM5xj54gZjHXobSNUe), a short video demo of [Leibniz](Leibniz.md) that illustrates the role of digital scientific notations.
