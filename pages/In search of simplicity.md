@@ -8,6 +8,8 @@ The following alphabetically ordered list makes no claim to being exhaustive. It
 
 [Gemini](https://gemini.circumlunar.space/) is a minimalist Web-like technology stack, replacing both the HTTP protocol and the HTML markup language by much simpler equivalents. The goal of Gemini is twofold: create a simple technology stack that is easy to implement, and eliminate features seen as undesirable by its community, such as tracking or advertising, by making them technically impossible.
 
+The programming language [Hare](https://harelang.org/), currently in an early stage of development, has the design goals to be simple, stable, and robust. Its plan for avoiding complexification is radical: once the specification reaches version 1.0, it will be frozen forever.
+
 The [IndieWeb](https://indieweb.org/) is a community dedicated to simple Web sites based on simple standards and simple technology, outside of corporate control. It provides support for people wishing to build and host their own Web sites, using a manageable subset of the official Web standards complemented by conventions such as [microformat](https://indieweb.org/microformats).
 
 [KolibriOS](https://kolibrios.org/en/) is an operating system for old and/or low-resource computers. It does not seem to have an explicit focus on simplicity, but requires such a focus indirectly though resource restrictions.
