@@ -61,7 +61,7 @@ for page_filename in os.listdir(page_directory):
             tiddler_file.write(md_link.sub(rewrite_link, page_text))
         tiddler_file.write("\n<br>\n")
         tiddler_file.write("[Permanent link to this version]")
-        tiddler_file.write(f"(https://github.com/khinsen/science-in-the-digital-era/blob/{commit}/pages/{page_filename_url})")
+        tiddler_file.write(f"(https://codeberg.org/khinsen/science-in-the-digital-era/src/commit/{commit}/pages/{page_filename_url})")
         tiddler_file.write(" ([archive copy]")
         tiddler_file.write(f"(https://archive.softwareheritage.org/swh:1:cnt:{git_hash}))")
         tiddler_file.write("\n")

@@ -47,10 +47,10 @@ pdf_welcome = "# Welcome {#Welcome}" + f"""
 This is an archival copy of my [digital garden](#Digital-Garden) whose
 current on-line version can be consulted at
 
-   [https://github.com/khinsen/science-in-the-digital-era](https://github.com/khinsen/science-in-the-digital-era)
+   [https://codeberg.org/khinsen/science-in-the-digital-era](https://codeberg.org/khinsen/science-in-the-digital-era)
 
 This archival copy corresponds to
-[commit {commit}](https://github.com/khinsen/science-in-the-digital-era/tree/{commit}), which was published on {date}.
+[commit {commit}](https://codeberg.org/khinsen/science-in-the-digital-era/src/commit/{commit}), which was published on {date}.
 
 This digital garden contains essays, thoughts, random ideas, and references that relate to the practice of [scientific research in the digital era](#Science-in-the-digital-era), characterized by computers (personal, high-performance, cloud, ...), software, the Internet, global collaborations, social networks, and more. They represent exclusively [my personal views](#About-the-author) and in particular not those of [my employer](https://www.cnrs.fr/).
 
