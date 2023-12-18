@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -X POST https://archive.softwareheritage.org/api/1/origin/save/git/url/http://codeberg.org/khinsen/science-in-the-digital-era.git/  | jq '.["request_url"]'
